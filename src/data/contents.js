@@ -1,0 +1,6 @@
+{
+    landingPage: {
+        en: "Hello! I'm Ojan, a "
+        id : "Halo! Saya Ojan, seorang "
+    }
+}
