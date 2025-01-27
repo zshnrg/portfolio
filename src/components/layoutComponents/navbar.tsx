@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 import { MdMenu } from "react-icons/md";
 import LanguageToogle from "./languageToogle";
 import { motion, AnimatePresence } from "motion/react";
-import { useLanguage } from "@/contexts/languageContext";
+import { useLanguage, Language } from "@/contexts/languageContext";
 
 const menus = [
     { name: {
@@ -53,7 +53,7 @@ const whiteLayerVariants = {
 
 const menuVariants = {
     hidden: { opacity: 0, x: "-100%" },
-    visible: (index) => ({
+    visible: (index: number) => ({
         opacity: 1,
         x: 0,
         transition: {
@@ -68,7 +68,7 @@ export default function Navigation() {
     const [bgColor, setBgColor] = useState("bg-transparent");
     const [isOpen, setIsOpen] = useState(false);
 
-    const { language } = useLanguage();
+    const { language } = useLanguage()
 
     const handleScroll = () => {
         if (window.scrollY > 20) {
@@ -86,7 +86,7 @@ export default function Navigation() {
         setIsOpen(!isOpen);
     }
 
-    const handleClinkMenu = (url) => {
+    const handleClinkMenu = (url: string) => {
         setIsOpen(false);
     }
 

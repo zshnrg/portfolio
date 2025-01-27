@@ -1,7 +1,7 @@
 import { useLanguage } from "@/contexts/languageContext";
 
 export default function LanguageToggle({ className }: { className?: string }) {
-    const { language, setLanguage } = useLanguage();
+    const { language, setLanguage } = useLanguage() as { language: string, setLanguage: (lang: string) => void };
 
     const changeLanguage = () => {
         setLanguage(language === "en" ? "id" : "en");
