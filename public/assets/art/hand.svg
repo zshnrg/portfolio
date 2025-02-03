@@ -1,0 +1,22 @@
+<svg width="560" height="1680" viewBox="0 0 560 1680" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="160" y="400" width="80" height="320" transform="rotate(-90 160 400)" fill="#F2B807"/>
+<path d="M240 80L160 80L160 -6.99382e-06V-6.99382e-06C204.183 -3.13124e-06 240 35.8172 240 80V80Z" fill="#F2B807"/>
+<path d="M320 400L240 400L240 320V320C284.183 320 320 355.817 320 400V400Z" fill="#FE4649"/>
+<path d="M400 400L320 400L320 320V320C364.183 320 400 355.817 400 400V400Z" fill="#FE4649"/>
+<path d="M0 640H160L160 800V800C71.6344 800 0 728.366 0 640V640Z" fill="#FE4649"/>
+<path d="M480 400L400 400L400 320V320C444.183 320 480 355.817 480 400V400Z" fill="#FE4649"/>
+<path d="M560 400L480 400L480 320V320C524.183 320 560 355.817 560 400V400Z" fill="#FE4649"/>
+<path d="M480 800L480 720L560 720V720C560 764.183 524.183 800 480 800V800Z" fill="#F2B807"/>
+<path d="M80 400L80 480L9.5399e-07 480V480C4.27116e-07 435.817 35.8172 400 80 400V400Z" fill="#F2B807"/>
+<path d="M160 0L160 80L80 80V80C80 35.8172 115.817 -1.93129e-06 160 0V0Z" fill="#526AF2"/>
+<rect x="160" y="320" width="80" height="240" transform="rotate(-180 160 320)" fill="#CDF252"/>
+<rect x="240" y="320" width="80" height="240" transform="rotate(-180 240 320)" fill="#F2B807"/>
+<rect x="160" y="480" width="80" height="160" transform="rotate(-180 160 480)" fill="#F2B807"/>
+<rect x="80" y="640" width="80" height="160" transform="rotate(-180 80 640)" fill="#2594D9"/>
+<rect x="160" y="640" width="80" height="160" transform="rotate(-180 160 640)" fill="#CDF252"/>
+<rect x="480" y="720" width="320" height="320" transform="rotate(-180 480 720)" fill="#CDF252"/>
+<rect x="400" y="1680" width="240" height="960" transform="rotate(-180 400 1680)" fill="#526AF2"/>
+<rect x="480" y="1680" width="80" height="960" transform="rotate(-180 480 1680)" fill="#FE4649"/>
+<rect x="560" y="720" width="80" height="320" transform="rotate(-180 560 720)" fill="#FFDF5D"/>
+<path d="M400 720L160 720L160 480L200 480C310.457 480 400 569.543 400 680L400 720Z" fill="#027313"/>
+</svg>
