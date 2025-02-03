@@ -1,6 +1,8 @@
 {
-    "landingPage": {
-        "en": "Hello! I'm Ojan, a ",
-        "id" : "Halo! Saya Ojan, seorang "
+    "landingFrame": {
+        "title": {
+            "en": "Hello! I'm Ojan, a ",
+            "id" : "Halo! Saya Ojan, seorang "
+        }
     }
 }

@@ -7,3 +7,9 @@
     text-wrap: balance;
   }
 }
+
+.shadow {
+  -webkit-filter: drop-shadow( 0 9px 7px rgb(0 0 0 / 0.1));
+  filter: drop-shadow( 0 9px 7px rgb(0 0 0 / 0.1));
+  /* Similar syntax to box-shadow */
+}
