@@ -6,10 +6,17 @@ import PendulumSimulation from "@/components/pendulumSimulation";
 import Image from "next/image";
 
 import contents from "@/data/contents.json"
+import O_SVG from "@/public/assets/svg/o.svg"
 
 export default function LandingFrame() {
 
     const { language } = useLanguage();
+
+    const SVG_O = <svg width="200" height="200" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 200H400V200C400 310.457 310.457 400 200 400V400C89.5431 400 0 310.457 0 200V200Z" fill="#526AF2"/>
+    <path d="M0 200H200V400V400C89.5431 400 0 310.457 0 200V200Z" fill="#F2B807"/>
+    <rect x="200" width="200" height="200" fill="#2594D9"/>
+    </svg>
 
     return (
         <div className="h-svh w-full bg-white rounded-b-3xl flex flex-col items-center justify-center gap-24 px-8 md:px-24">
@@ -37,6 +44,7 @@ export default function LandingFrame() {
                     </h2>
                 </div>
             </div>
+            <PendulumSimulation ballSVG={SVG_O} />
         </div>
     );
 }
