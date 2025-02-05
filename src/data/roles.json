@@ -2,36 +2,36 @@
     {
         "en": "Backend Developer",
         "id": "Pengembang Backend",
-        "color": "blue"
+        "color": "#FF5733"
     },
     {
         "en": "Frontend Developer",
         "id": "Pengembang Frontend",
-        "color": "green"
+        "color": "#33B5E5"
     },
     {
         "en": "Fullstack Developer",
         "id": "Pengembang Fullstack",
-        "color": "purple"
+        "color": "#8E44AD"
     },
     {
         "en": "Software Engineer",
         "id": "Pembuat Perangkat Lunak",
-        "color": "teal"
+        "color": "#2ECC71"
     },
     {
         "en": "UI/UX Designer",
         "id": "Perancang UI/UX",
-        "color": "lime"
+        "color": "#FFC107"
     },
     {
         "en": "Mobile Developer",
         "id": "Pengembang Mobile App",
-        "color": "orange"
+        "color": "#E91E63"
     },
     {
         "en": "Machine Learning Engineer",
         "id": "Pembuat Model Machine Learning",
-        "color": "red"
+        "color": "#FF9800"
     }
 ]

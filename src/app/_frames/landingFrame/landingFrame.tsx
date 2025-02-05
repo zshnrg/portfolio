@@ -76,12 +76,14 @@ export default function LandingFrame() {
     return (
         <div className="relative h-svh w-full rounded-b-3xl flex items-center justify-center overflow-hidden">
             {/* <PendulumSimulation ballSVG={SVG_O} /> */}
-            <div className="flex w-full h-full bg-white items-end justify-center gap-12 md:gap-18 lg:gap-32">
+            <div className="flex w-full h-full bg-neutral-100 items-end justify-center gap-12 md:gap-18 lg:gap-32">
                 <PendulumSimulation ballSVG={SVG_O} ballRadius={ballSize / 2} barLength={barLength}  barDamping={5} barStiffness={500} idlePeriod={1500 + Math.random() * 500}/>
                 <PendulumSimulation ballSVG={SVG_J} ballRadius={ballSize / 2} barLength={barLength + 70} barDamping={5} barStiffness={500} idlePeriod={1500 + Math.random() * 500}/>
                 <PendulumSimulation ballSVG={SVG_A} ballRadius={ballSize / 2} barLength={barLength -30} barDamping={5} barStiffness={500} idlePeriod={1500 + Math.random() * 500}/>
                 <PendulumSimulation ballSVG={SVG_N} ballRadius={ballSize / 2} barLength={barLength - 10} barDamping={5} barStiffness={500} idlePeriod={1500 + Math.random() * 500}/>
             </div>
+
+            <div className="absolute left-0 bottom-0 right-0 h-8 pointer-events-none bg-white shadow-xl"></div>
 
             <div className="absolute pointer-events-none flex flex-col items-center justify-center gap-24">
 
@@ -89,23 +91,27 @@ export default function LandingFrame() {
                     <Image src="/assets/image/self.png" alt="My Self" width={350} height={450} />
                 </div>
 
-                <div className="flex flex-col w-fit items-center justify-center rounded-xl bg-white shadow-lg py-3 px-6 md:shadow-xl md:py-4 md:px-8 lg:py-6 lg:px-10 mx-auto">
-                    <h2 className="text-md md:text-xl lg:text-2xl flex items-center w-fit">
-                        {contents.landingFrame.title[language]}
-                        &nbsp;
-                        <AnimatePresence mode="wait">
-                            <motion.span
-                                key={index}
-                                initial={{ y: "100%", opacity: 0, color: roles[index].color }}
-                                animate={{ y: "0%", opacity: 1, color: roles[index].color }}
-                                exit={{ y: "-100%", opacity: 0, color: roles[index].color }}
-                                transition={{ duration: 0.5, ease: "easeInOut" }}
-                                className="font-bold"
-                            >
-                                {roles[index][language]}
-                            </motion.span>
-                        </AnimatePresence>
-                    </h2>
+                <div className="flex flex-col">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15%" viewBox="0 0 118 50" fill="none" className="ml-8 md:ml-16 lg:ml-24 overflow-visible">
+                        <path d="M104.375 1.30341C110.745 -1.97672 118.08 3.12705 117.467 10.0526C117.419 10.5937 117.265 11.1193 117.076 11.6287L101 54.9999H0.100586L104.375 1.30341Z" fill="white" className="shadow"/>
+                    </svg>
+                    <div className="flex rounded-xl bg-white shadow-lg py-3 px-6 md:shadow-xl md:py-4 md:px-8 lg:py-6 lg:px-10 mx-auto">
+                        <h2 className="text-md md:text-xl lg:text-2xl flex flex-wrap items-center max-w-full">
+                            <span className="min-w-0 truncate">{contents.landingFrame.title[language]}</span>
+                            <AnimatePresence mode="wait">
+                                <motion.span
+                                    key={index}
+                                    initial={{ y: "100%", opacity: 0, color: roles[index].color }}
+                                    animate={{ y: "0%", opacity: 1, color: roles[index].color }}
+                                    exit={{ y: "-100%", opacity: 0, color: roles[index].color }}
+                                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                                    className="font-bold whitespace-nowrap"
+                                >
+                                    &nbsp;{roles[index][language]}
+                                </motion.span>
+                            </AnimatePresence>
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>
