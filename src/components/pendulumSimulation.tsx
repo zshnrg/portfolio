@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 
 interface PendulumSimulationProps {
   ballRadius?: number;
-  ballSVG?: string | null;
+  ballSVG?: React.ReactNode | null;
   ballColor?: string;
   barLength?: number;
   barWidth?: number;
@@ -32,32 +32,37 @@ export default function PendulumSimulation({
   idleAngle=5,
   idlePeriod=2000,
   idleTimeout=1000,
-  sensitivity=0.5,
+  sensitivity=25,
 }: PendulumSimulationProps) {
 
   const idleTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const isUserInteracting = useRef(false);
-  const [angle, setAngle] = useState(0); // Sudut pendulum
-  const pendulumControls = useAnimation(); // Animasi pendulum
+  const [angle, setAngle] = useState(0); 
+  const pendulumControls = useAnimation(); 
   const controls = useAnimation();
 
-  // Fungsi untuk menghasilkan path batang pendulum yang melengkung
   const getPendulumPath = (angle: number) => {
-    const rad = (angle * Math.PI) / 180; // Konversi sudut ke radian
-    const curveX = ballRadius + Math.sin(rad) * ballRadius; // Hitung posisi X kurva
+    const rad = (angle * Math.PI) / 180;
+    const curveX = ballRadius + Math.sin(rad) * ballRadius; 
     const curveY = (ballRadius + barLength / 3) + Math.cos(rad) * (barLength * 0.2); // **Ubah titik bawah ke titik atas**
     return `M${ballRadius} ${ballRadius} Q${curveX} ${curveY} ${ballRadius} ${ballRadius + barLength}`; // **Perbarui path agar bola tetap terhubung**
   };
 
+  const animatePendulum = async (targetAngle: number) => {
+    await Promise.all([
+      controls.start({
+        d: getPendulumPath(-targetAngle),
+        transition: { duration: idlePeriod / 1000, ease: "easeInOut" },
+      }),
+      pendulumControls.start({
+        rotate: targetAngle,
+        transition: { duration: idlePeriod / 1000, ease: "easeInOut" },
+      }),
+    ]);
+  };
+  
   const startIdleAnimation = async () => {
-    if (isUserInteracting.current) return; // **Prevent idle if user is still interacting**
-    
-    const animatePendulum = async (targetAngle: number) => {
-      await Promise.all([
-        controls.start({ d: getPendulumPath(-targetAngle), transition: { duration: idlePeriod / 1000, ease: "easeInOut" } }),
-        pendulumControls.start({ rotate: targetAngle, transition: { duration: idlePeriod / 1000, ease: "easeInOut" } }),
-      ]);
-    };
+    if (isUserInteracting.current) return; 
 
     while (!isUserInteracting.current) {
       await animatePendulum(-idleAngle);
@@ -67,10 +72,10 @@ export default function PendulumSimulation({
 
   const handleHover = (event: React.MouseEvent) => {
     if (idleTimeoutRef.current) clearTimeout(idleTimeoutRef.current);
-    isUserInteracting.current = true; // **Mark as user interacting**
+    isUserInteracting.current = true; 
 
     const { movementX } = event;
-    const newAngle = Math.max(-maxAngle, Math.min(maxAngle, angle + movementX * sensitivity));
+    const newAngle = Math.max(-maxAngle, Math.min(maxAngle, movementX * sensitivity));
     setAngle(newAngle);
     controls.start({ d: getPendulumPath(-newAngle), transition: { duration: 0.1 } });
     pendulumControls.start({ rotate: newAngle });
@@ -89,6 +94,12 @@ export default function PendulumSimulation({
       startIdleAnimation();
     }, idleTimeout);
   };
+
+  useEffect(() => {
+    console.log("PendulumSimulation mounted");
+    controls.set({ d: getPendulumPath(angle) });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [barLength, ballRadius]);
 
   useEffect(() => {
     startIdleAnimation();

@@ -1,0 +1,37 @@
+[
+    {
+        "en": "Backend Developer",
+        "id": "Pengembang Backend",
+        "color": "blue"
+    },
+    {
+        "en": "Frontend Developer",
+        "id": "Pengembang Frontend",
+        "color": "green"
+    },
+    {
+        "en": "Fullstack Developer",
+        "id": "Pengembang Fullstack",
+        "color": "purple"
+    },
+    {
+        "en": "Software Engineer",
+        "id": "Pembuat Perangkat Lunak",
+        "color": "teal"
+    },
+    {
+        "en": "UI/UX Designer",
+        "id": "Perancang UI/UX",
+        "color": "lime"
+    },
+    {
+        "en": "Mobile Developer",
+        "id": "Pengembang Mobile App",
+        "color": "orange"
+    },
+    {
+        "en": "Machine Learning Engineer",
+        "id": "Pembuat Model Machine Learning",
+        "color": "red"
+    }
+]
