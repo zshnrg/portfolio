@@ -49,14 +49,24 @@ export default function PendulumSimulation({
   };
 
   const animatePendulum = async (targetAngle: number) => {
-    await Promise.all([
-      controls.start({
-        d: getPendulumPath(-targetAngle),
-        transition: { duration: idlePeriod / 1000, ease: "easeInOut" },
-      }),
-      pendulumControls.start({
-        rotate: targetAngle,
-        transition: { duration: idlePeriod / 1000, ease: "easeInOut" },
+    // Race between the animation and a user interaction check
+    await Promise.race([
+      Promise.all([
+        controls.start({
+          d: getPendulumPath(-targetAngle),
+          transition: { duration: idlePeriod / 1000, ease: "easeInOut" },
+        }),
+        pendulumControls.start({
+          rotate: targetAngle,
+          transition: { duration: idlePeriod / 1000, ease: "easeInOut" },
+        }),
+      ]),
+      new Promise<void>((resolve) => {
+        const check = () => {
+          if (isUserInteracting.current) resolve(); // Resolve if user interacts
+          else requestAnimationFrame(check); // Keep checking
+        };
+        check();
       }),
     ]);
   };
@@ -66,8 +76,9 @@ export default function PendulumSimulation({
 
     while (!isUserInteracting.current) {
       await animatePendulum(-idleAngle);
+      if (isUserInteracting.current) break;
       await animatePendulum(idleAngle);
-    }
+    }    
   };
 
   const handleHover = (event: React.MouseEvent) => {
@@ -77,36 +88,47 @@ export default function PendulumSimulation({
     const { movementX } = event;
     const newAngle = Math.max(-maxAngle, Math.min(maxAngle, movementX * sensitivity));
     setAngle(newAngle);
-    controls.start({ d: getPendulumPath(-newAngle), transition: { duration: 0.1 } });
+    controls.start({ d: getPendulumPath(-newAngle)});
     pendulumControls.start({ rotate: newAngle });
   };
 
   const handleHoverEnd = async () => {
     isUserInteracting.current = false; // **Mark as no interaction**
     
-    pendulumControls.start({ rotate: 0, transition: { type: "spring", stiffness: barStiffness, damping: barDamping } });
-    controls.start({ d: getPendulumPath(0), transition: { type: "spring", stiffness: barStiffness, damping: barDamping } });
+    await Promise.all([
+      pendulumControls.start({ rotate: 0, transition: { type: "spring", stiffness: barStiffness, damping: barDamping } }),
+      controls.start({ d: getPendulumPath(0), transition: { type: "spring", stiffness: barStiffness, damping: barDamping } })
+    ]);
     
     setAngle(0);
 
     // **Start timeout to resume idle animation**
     idleTimeoutRef.current = setTimeout(() => {
       startIdleAnimation();
-    }, idleTimeout);
+    }, 0);
   };
 
   useEffect(() => {
-    console.log("PendulumSimulation mounted");
-    controls.set({ d: getPendulumPath(angle) });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [barLength, ballRadius]);
-
-  useEffect(() => {
-    startIdleAnimation();
-    return () => {
+    const fetchData = async () => {
+      // Reset pendulum to middle position and start idle animation after initial render
+      // Stop idle animation
       if (idleTimeoutRef.current) clearTimeout(idleTimeoutRef.current);
+      isUserInteracting.current = true;
+
+      // Reset pendulum to middle position
+      setAngle(0);
+      await Promise.all([
+        pendulumControls.start({ rotate: 0, transition: { duration: 0.1 } }),
+        controls.start({ d: getPendulumPath(0), transition: { duration: 0.1 } }),
+      ]);
+
+      // Start idle animation
+      isUserInteracting.current = false;
+      await startIdleAnimation();
     };
-  }, []);
+
+    fetchData();
+  }, [barLength, ballRadius]);
 
   return (
     <motion.div

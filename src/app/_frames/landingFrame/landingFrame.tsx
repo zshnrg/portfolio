@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/contexts/languageContext";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 import { motion, AnimatePresence } from "motion/react";
 import PendulumSimulation from "@/components/pendulumSimulation";
@@ -9,36 +10,17 @@ import Image from "next/image";
 
 import contents from "@/data/contents.json"
 import roles from "@/data/roles.json"
-import { isVowel } from "@/utils/language/character";
 
 export default function LandingFrame() {
 
-    // getting window size
-    const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+    const {height, width} = useWindowDimensions();
 
-    const [ballSize, setBallSize] = useState(100);
-    const [barLength, setBarLength] = useState(500);
+    const ballSize = (width) / 5.25;
+    const barLength = (height) * 0.35;
 
     const [index, setIndex] = useState(0);
     
     const { language } = useLanguage();
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowSize({
-                width: window.innerWidth,
-                height: window.innerHeight,
-            });
-
-            setBallSize((window.innerWidth) / 6.25);
-            setBarLength((window.innerHeight) * 0.4);
-        }
-
-        window.addEventListener("resize", handleResize);
-        handleResize();
-
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -76,7 +58,7 @@ export default function LandingFrame() {
     return (
         <div className="relative h-svh w-full rounded-b-3xl flex items-center justify-center overflow-hidden">
             {/* <PendulumSimulation ballSVG={SVG_O} /> */}
-            <div className="flex w-full h-full bg-neutral-100 items-end justify-center gap-12 md:gap-18 lg:gap-32">
+            <div className="flex w-full h-full bg-neutral-100 items-end justify-center gap-12 md:gap-18 lg:gap-24">
                 <PendulumSimulation ballSVG={SVG_O} ballRadius={ballSize / 2} barLength={barLength}  barDamping={5} barStiffness={500} idlePeriod={1500 + Math.random() * 500}/>
                 <PendulumSimulation ballSVG={SVG_J} ballRadius={ballSize / 2} barLength={barLength + 70} barDamping={5} barStiffness={500} idlePeriod={1500 + Math.random() * 500}/>
                 <PendulumSimulation ballSVG={SVG_A} ballRadius={ballSize / 2} barLength={barLength -30} barDamping={5} barStiffness={500} idlePeriod={1500 + Math.random() * 500}/>
