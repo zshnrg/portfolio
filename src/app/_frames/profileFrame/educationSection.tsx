@@ -1,6 +1,6 @@
 import { useLanguage } from "@/contexts/languageContext"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { MdOutlineSchool, MdOutlinePermDataSetting } from "react-icons/md"
+import { MdOutlineSchool, MdOutlinePermDataSetting, MdOutlineArrowForward, MdOutlineAdd } from "react-icons/md"
 import { useRef } from "react"
 import contents from "@/data/contents.json"
 
@@ -26,7 +26,7 @@ export default function EducationSection() {
             ref={sectionRef}
             style={{ x: translateX }} // Animasi masuk
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="col-span-2 lg:col-span-1 flex flex-col w-full py-40 px-[calc(100%/6)] justify-start gap-6 md:gap-8 lg:gap-12 rounded-l-[100px] bg-[#2A2A2A]"
+            className="relative col-span-2 lg:col-span-1 flex flex-col w-full py-40 px-[calc(100%/6)] justify-start gap-6 md:gap-8 lg:gap-12 rounded-l-[100px] bg-[#2A2A2A]"
         >
             <h2 className="text-4xl lg:text-6xl font-bold text-white">
                 {contents.profileFrame.educationSection.title[language]}
@@ -66,6 +66,28 @@ export default function EducationSection() {
                         </motion.div>
                     )
                 })}
+            </div>
+
+            
+            <motion.div
+                style={{ opacity: useTransform(scrollYProgress, [yProgressEnd, 1], [0, 1]) }} 
+                className="flex flex-wrap gap-4"
+            >
+                {/* Related Course Button */}
+                <button className="flex items-center gap-2 font-bold text-sm md:text-md lg:text-lg text-white bg-sky-400 rounded-full p-3 px-6 whitespace-nowrap hover:bg-sky-500 transition-all duration-300">
+                    {language === 'en' ? "Related Coursework" : "Mata Kuliah"} <MdOutlineArrowForward  className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+                </button>
+
+                <button className="flex items-center gap-2 font-bold text-sm md:text-md lg:text-lg text-neutral-800 bg-yellow-400 rounded-full p-3 px-6 whitespace-nowrap hover:bg-yellow-500 transition-all duration-300">
+                    {language === 'en' ? "More Activities" : "Kegiatan Lain"} <MdOutlineAdd className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+                </button>
+            </motion.div>
+
+            <div className="absolute left-0 bottom-0">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50.0001" r="50" fill="#F23827"/>
+                    <circle cx="50" cy="50" r="25" fill="#FFDF5E"/>
+                </svg>
             </div>
         </motion.div>
     )
