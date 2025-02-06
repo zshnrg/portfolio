@@ -53,7 +53,7 @@ export default function Navigation() {
     }, []);
 
     const handleScroll = () => {
-        if (window.scrollY > window.innerHeight) {
+        if (window.scrollY > window.innerHeight - 100) {
             setBgColor("bg-white");
         } else {
             setBgColor("bg-transparent");
