@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <Provider>
       <html lang="en">
-        <body className={plusJakartaSans.className + " relative bg-neutral-900"}>
+        <body className={plusJakartaSans.className + " relative bg-neutral-800"}>
           <Navigation />
           <main>
             {children}

@@ -57,7 +57,7 @@ export default function LandingFrame() {
 
     return (
         <div
-            style={{ backgroundImage: "url('/assets/art/gradient.svg')", backgroundSize: "contain", backgroundPosition: "top", backgroundRepeat: "no-repeat" }}
+            style={{ backgroundImage: "url('/assets/background/gradient_light.svg')", backgroundSize: "contain", backgroundPosition: "top", backgroundRepeat: "no-repeat" }}
             className="relative h-svh w-full rounded-b-3xl flex items-center justify-center overflow-hidden bg-neutral-100"
         >
             {/* <PendulumSimulation ballSVG={SVG_O} /> */}
@@ -90,7 +90,7 @@ export default function LandingFrame() {
                         <path d="M104.375 1.30341C110.745 -1.97672 118.08 3.12705 117.467 10.0526C117.419 10.5937 117.265 11.1193 117.076 11.6287L101 54.9999H0.100586L104.375 1.30341Z" fill="white" className="shadow" />
                     </svg>
                     <div className="flex rounded-lg md:rounded-xl lg:rounded-3xl bg-white shadow-lg py-3 px-6 md:shadow-xl md:py-4 md:px-8 lg:py-6 lg:px-10 mx-auto">
-                        <h2 className="text-md md:text-xl lg:text-2xl flex flex-wrap items-center max-w-full">
+                        <h3 className="text-md md:text-xl lg:text-2xl flex flex-wrap items-center max-w-full">
                             <span className="min-w-0 truncate">{contents.landingFrame.title[language]}</span>
                             <AnimatePresence mode="wait">
                                 <motion.span
@@ -104,7 +104,7 @@ export default function LandingFrame() {
                                     &nbsp;{roles[index][language]}
                                 </motion.span>
                             </AnimatePresence>
-                        </h2>
+                        </h3>
                     </div>
                 </div>
             </div>
