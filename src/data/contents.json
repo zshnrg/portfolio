@@ -4,5 +4,99 @@
             "en": "Hello! I'm Ojan, a",
             "id" : "Halo! Saya Ojan, seorang"
         }
+    },
+    "profileFrame": {
+        "aboutSection": {
+            "title": {
+                "en": "About",
+                "id": "Tentang Saya"
+            },
+            "content": {
+                "en": [
+                    {
+                        "text": [
+                            "Hello there!!"
+                        ],
+                        "style": [
+                            ""
+                        ]
+                    },
+                    {
+                        "text": [
+                            "I'm Ojan, a",
+                            "Software Engineer",
+                            "based in",
+                            "Indonesia",
+                            "with",
+                            "+2 years",
+                            "of professional experience."
+                        ],
+                        "style": [
+                            "",
+                            "font-bold underline decoration-sky-500 decoration-2",
+                            "",
+                            "font-bold",
+                            "",
+                            "font-bold underline decoration-sky-500 decoration-2",
+                            ""
+                        ]
+                    },
+                    {
+                        "text": [
+                            "I'm an undergraduate student majoring in Information System and Technology. As a",
+                            "Jack of All Trades,",
+                            "I have expertise in UI/UX design, front-end and back-end development, machine learning, and IoT integration, backed by six years in robotics."
+                        ],
+                        "style": [
+                            "",
+                            "font-bold underline decoration-sky-500 decoration-2",
+                            ""
+                        ]
+                    }
+                ],
+                "id": [
+                    {
+                        "text": [
+                            "Halo!!"
+                        ],
+                        "style": [
+                            ""
+                        ]
+                    },
+                    {
+                        "text": [
+                            "Saya Ojan, seorang",
+                            "Software Engineer",
+                            "berbasis di",
+                            "Indonesia",
+                            "dengan",
+                            "+2 tahun",
+                            "pengalaman profesional di bidang ini."
+                        ],
+                        "style": [
+                            "",
+                            "font-bold underline decoration-sky-500 decoration-2",
+                            "",
+                            "font-bold",
+                            "",
+                            "font-bold underline decoration-sky-500 decoration-2",
+                            ""
+                        ]
+                    },
+                    {
+                        "text": [
+                            "Saya adalah mahasiswa sarjana jurusan Sistem dan Teknologi Informasi. Sebagai",
+                            "Jack of All Trades,",
+                            "saya memiliki keahlian di desain UI/UX, pengembangan front-end dan back-end, machine learning, dan integrasi IoT, didukung oleh enam tahun di bidang robotika."
+                        ],
+                        "style": [
+                            "",
+                            "font-bold underline decoration-sky-500 decoration-2",
+                            ""
+                        ]
+                    }
+                ]
+            }
+        }
     }
 }
