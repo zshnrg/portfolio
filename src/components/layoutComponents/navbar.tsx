@@ -129,7 +129,7 @@ export default function Navigation() {
                                 {
                                     isHoverable && (
                                         <motion.div
-                                            className={`absolute right-0 md:right-4 lg:right-8 bottom-[-100%]`}
+                                            className={`absolute right-0 md:right-8 lg:right-32 bottom-[-100%]`}
                                             ref={handRef}
                                             initial={{ opacity: 1, y: 0 }}
                                             animate={
