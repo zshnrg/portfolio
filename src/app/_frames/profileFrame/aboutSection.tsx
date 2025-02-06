@@ -10,7 +10,7 @@ export default function AboutSection() {
             <h2 className="text-6xl font-bold text-white">{contents.profileFrame.aboutSection.title[language]}</h2>
             <div className="flex flex-col gap-6">
                 { contents.profileFrame.aboutSection.content[language].map((paragraph, index) => (
-                    buildParagraph(paragraph, "text-2xl leading-10 text-white whitespace-pre-line text-justify")
+                    buildParagraph(paragraph, "text-2xl leading-10 text-white text-justify")
                 ))}
             </div>
         </div>
