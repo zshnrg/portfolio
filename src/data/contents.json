@@ -97,6 +97,42 @@
                     }
                 ]
             }
+        },
+        "educationSection": {
+            "title": {
+                "en": "Education",
+                "id": "Pendidikan"
+            },
+            "content": {
+                "en": [
+                    {
+                        "title": "Bandung Institute of Technology, Indonesia",
+                        "degree":"Bachelor of Engineering",
+                        "major": "Information System and Technology",
+                        "date": "2021 - Present"
+                    },
+                    {
+                        "title": "Robotic Explorer, Indonesia",
+                        "degree":"Microcontroller & Robotics",
+                        "major": "",
+                        "date": "2013 - 2019"
+                    }
+                ],
+                "id": [
+                    {
+                        "title": "Institut Teknologi Bandung, Indonesia",
+                        "degree":"Sarjana Teknik",
+                        "major": "Sistem dan Teknologi Informasi",
+                        "date": "2021 - Sekarang"
+                    },
+                    {
+                        "title": "Robotic Explorer, Indonesia",
+                        "degree":"Mikrokontroler & Robotika",
+                        "major": "",
+                        "date": "2013 - 2019"
+                    }
+                ]
+            }
         }
     }
 }
