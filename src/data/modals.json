@@ -1,0 +1,241 @@
+{
+    "courseworkModal": {
+        "title": {
+            "en": "Coursework",
+            "id": "Mata Kuliah"
+        },
+        "subtitle": {
+            "en": "Find coursework related to the expertise below",
+            "id": "Cari mata kuliah yang terkait dengan keahlian di bawah ini"
+        },
+        "data": {
+            "tags": [
+                {
+                    "tag": "software",
+                    "color": {
+                        "bg": "bg-orange-100",
+                        "active": "bg-orange-400 animate-bounce",
+                        "text": "text-orange-800",
+                        "hover": "hover:bg-orange-300"
+                    },
+                    "en": "Software & Web",
+                    "id": "Web & Perangkat Lunak"
+                },
+                {
+                    "tag": "mobile",
+                    "color": {
+                        "bg": "bg-blue-100",
+                        "active": "bg-blue-400  animate-bounce",
+                        "text": "text-blue-800",
+                        "hover": "hover:bg-blue-300"
+                    },
+                    "en": "Mobile Development",
+                    "id": "Aplikasi Mobile"
+                },
+                {
+                    "tag": "uiux",
+                    "color": {
+                        "bg": "bg-emerald-100",
+                        "active": "bg-emerald-400 animate-bounce",
+                        "text": "text-emerald-800",
+                        "hover": "hover:bg-emerald-300"
+                    },
+                    "en": "UI/UX Design",
+                    "id": "Desain UI/UX"
+                },
+                {
+                    "tag": "ml",
+                    "color": {
+                        "bg": "bg-red-100",
+                        "active": "bg-red-400 animate-bounce",
+                        "text": "text-red-800",
+                        "hover": "hover:bg-red-300"
+                    },
+                    "en": "Machine Learning",
+                    "id": "Pembelajaran Mesin"
+                },
+                {
+                    "tag": "robotics",
+                    "color": {
+                        "bg": "bg-purple-100",
+                        "active": "bg-purple-400 animate-bounce",
+                        "text": "text-purple-800",
+                        "hover": "hover:bg-purple-300"
+                    },
+                    "en": "Robotics & IoT",
+                    "id": "Robotik & IoT"
+                }
+            ],
+            "course" : [
+                {
+                    "name": {
+                        "en": "Industrial Practices",
+                        "id": "Kerja Praktik"
+                    },
+                    "tags": ["software", "uiux"]
+                },
+                {
+                    "name": {
+                        "en": "Multimedia System Engineering",
+                        "id": "Rekayasa Sistem Multimedia"
+                    },
+                    "tags": ["software", "uiux", "ml", "robotics"]
+                },
+                {
+                    "name": {
+                        "en": "Intelligent System",
+                        "id": "Sistem Cerdas"
+                    },
+                    "tags": ["ml"]
+                },
+                {
+                    "name": {
+                        "en": "Cryptography",
+                        "id": "Kriptografi"
+                    },
+                    "tags": ["software"]
+                },
+                {
+                    "name": {
+                        "en": "Mobile Platform & Application",
+                        "id": "Platform $ Aplikasi Mobile"
+                    },
+                    "tags": ["mobile", "uiux"]
+                },
+                {
+                    "name": {
+                        "en": "System Engineering",
+                        "id": "Rekayasa Sistem"
+                    },
+                    "tags": ["software", "uiux"]
+                },
+                {
+                    "name": {
+                        "en": "Information Security",
+                        "id": "Keamanan Informasi"
+                    },
+                    "tags": ["software", "mobile"]
+                },
+                {
+                    "name": {
+                        "en": "Enterprise Architecture",
+                        "id": "Arsitektur Enterprise"
+                    },
+                    "tags": ["software"]
+                },
+                {
+                    "name": {
+                        "en": "Human Computer Interaction",
+                        "id": "Interaksi Manusia Komputer"
+                    },
+                    "tags": ["uiux"]
+                },
+                {
+                    "name": {
+                        "en": "Project Management",
+                        "id": "Manajemen Proyek"
+                    },
+                    "tags": ["software"]
+                },
+                {
+                    "name": {
+                        "en": "Integrated System Technology",
+                        "id": "Teknologi Sistem Terintegrasi"
+                    },
+                    "tags": ["software", "robotics"]
+                },
+                {
+                    "name": {
+                        "en": "Multimedia System",
+                        "id": "Sistem Multimedia"
+                    },
+                    "tags": ["software"]
+                },
+                {
+                    "name": {
+                        "en": "System Requirement Analysis",
+                        "id": "Analisis Kebutuhan Sistem"
+                    },
+                    "tags": ["software"]
+                },
+                {
+                    "name": {
+                        "en": "IST Service",
+                        "id": "Layanan STI"
+                    },
+                    "tags": ["software"]
+                },
+                {
+                    "name": {
+                        "en": "Software Engineering",
+                        "id": "Rekayasa Perangkat Lunak"
+                    },
+                    "tags": ["software", "uiux"]
+                },
+                {
+                    "name": {
+                        "en": "Perceptual Psychology",
+                        "id": "Psikologi Persepsi"
+                    },
+                    "tags": ["uiux"]
+                },
+                {
+                    "name": {
+                        "en": "Embedded System",
+                        "id": "Sistem Embedded"
+                    },
+                    "tags": ["robotics"]
+                },
+                {
+                    "name": {
+                        "en": "Database Management",
+                        "id": "Manajemen Basis Data"
+                    },
+                    "tags": ["software"]
+                },
+                {
+                    "name": {
+                        "en": "Database Modeling",
+                        "id": "Pemodelan Basis Data"
+                    },
+                    "tags": ["software"]
+                },
+                {
+                    "name": {
+                        "en": "Computer Network",
+                        "id": "Jaringan Komputer"
+                    },
+                    "tags": ["software", "mobile", "ml"]
+                },
+                {
+                    "name": {
+                        "en": "OOP",
+                        "id": "PBO"
+                    },
+                    "tags": ["software", "mobile"]
+                },
+                {
+                    "name": {
+                        "en": "DSA",
+                        "id": "Algoritma & Struktur Data"
+                    },
+                    "tags": ["software", "mobile", "ml", "robotics"]
+                },
+                {
+                    "name": {
+                        "en": "Probability & Statistics",
+                        "id": "Probabilitas & Statistika"
+                    },
+                    "tags": ["ml"]
+                },
+                {
+                    "name": {
+                        "en": "Circuit Analysis",
+                        "id": "Analisis Rangkaian"
+                    },
+                    "tags": ["robotics"]
+                }
+            ]
+        }
+    }
+}
