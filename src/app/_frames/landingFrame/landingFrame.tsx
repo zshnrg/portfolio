@@ -89,7 +89,7 @@ export default function LandingFrame() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="15%" viewBox="0 0 118 50" fill="none" className="ml-8 md:ml-16 lg:ml-24 overflow-visible">
                         <path d="M104.375 1.30341C110.745 -1.97672 118.08 3.12705 117.467 10.0526C117.419 10.5937 117.265 11.1193 117.076 11.6287L101 54.9999H0.100586L104.375 1.30341Z" fill="white" className="shadow" />
                     </svg>
-                    <div className="flex rounded-lg md:rounded-xl lg:rounded-3xl bg-white shadow-lg py-3 px-6 md:shadow-xl md:py-4 md:px-8 lg:py-6 lg:px-10 mx-auto">
+                    <div className="flex rounded-lg md:rounded-xl lg:rounded-3xl bg-white shadow-lg py-3 px-6 md:shadow-xl md:py-4 md:px-8 lg:py-6 lg:px-10 mx-auto animate-bounce">
                         <h3 className="text-md md:text-xl lg:text-2xl flex flex-wrap items-center max-w-full">
                             <span className="min-w-0 truncate">{contents.landingFrame.title[language]}</span>
                             <AnimatePresence mode="wait">
