@@ -3,8 +3,8 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 // Components
-import Footer from "@/components/layoutComponents/footer";
-import Navigation from "@/components/layoutComponents/navbar";
+import Footer from "@/components/layout/footer";
+import Navigation from "@/components/layout/navbar";
 import Provider from "./provider";
 
 // const inter = Inter({ subsets: ["latin"] });
