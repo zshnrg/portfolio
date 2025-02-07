@@ -1,16 +1,25 @@
 "use client";
 
-import AboutSection from "./aboutSection";
-import EducationSection from "./educationSection";
+import { useDisclosure } from "@/hooks/useDisclosure";
+
+import AboutSection from "./sections/aboutSection";
+import EducationSection from "./sections/educationSection";
+import CourseworkModal from "./modals/courseworkModal";
 
 export default function ProfileFrame() {
+
+    const courseworkDisclosure = useDisclosure()
+    const activitiesDisclosure = useDisclosure()
+
     return (
         <div 
             className="grid grid-cols-2 overflow-hidden"
             style={{ backgroundImage: "url('/assets/background/gradient_dark.svg')", backgroundSize: "contain", backgroundPosition: "left", backgroundRepeat: "no-repeat" }}
         >
             <AboutSection />
-            <EducationSection />
+            <EducationSection courseworkDisclosure={courseworkDisclosure} activitiesDisclosure={activitiesDisclosure} />
+
+            <CourseworkModal disclosure={courseworkDisclosure} />
         </div>
     )
 }
