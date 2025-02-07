@@ -42,9 +42,10 @@ export function Modal({ title, isOpen, onOpenChange, children, size = "md", plac
   const { width } = useWindowDimensions(); 
 
   useEffect(() => {
-    console.log(width);
     if (placement === "auto") {
       setPosition(width > 640 ? "center" : "bottom");
+    } else {
+      setPosition(placement);
     }
   }, [placement, width]);
 
@@ -60,7 +61,7 @@ export function Modal({ title, isOpen, onOpenChange, children, size = "md", plac
         >
           <motion.div
             className={
-              "bg-white shadow-lg rounded-lg p-4 flex flex-col " + sizes[size] + " " + placements[position] + " overflow-hidden max-w-full max-h-full"
+              "bg-white shadow-lg rounded-lg p-4 flex flex-col " + sizes[size] + " " + placements[position] + " max-w-full max-h-full"
             }
             initial={{ 
               opacity: 0,
@@ -85,7 +86,7 @@ export function Modal({ title, isOpen, onOpenChange, children, size = "md", plac
             </div>
 
             {/* Content */}
-            <div className="overflow-auto max-h-[80vh] mt-6">{children}</div>
+            <div className="overflow-auto max-h-[80vh] mt-6 w-full">{children}</div>
           </motion.div>
         </motion.div>
       )}
