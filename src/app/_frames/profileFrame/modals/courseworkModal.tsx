@@ -58,7 +58,10 @@ export default function CourseworkModal({ disclosure } : { disclosure: ReturnTyp
                     <hr className="w-full border-gray-100 border-4 m-4 rounded-full" />
 
                     <AnimatePresence>
-                        <div className="flex flex-wrap gap-4">
+                        <motion.div 
+                            layout
+                            className="flex flex-wrap gap-4 transition-all duration-300"
+                        >
                             {activeData.map((course, index) => (
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }}
@@ -66,22 +69,25 @@ export default function CourseworkModal({ disclosure } : { disclosure: ReturnTyp
                                     exit={{ opacity: 0, y: 20 }}
                                     transition={{ duration: 0.5, delay: index * 0.025 }}
                                     key={course.name.id} 
-                                    className="flex flex-col gap-2 p-2 bg-sky-300 font-medium text-sm rounded-xl">
+                                    className="flex flex-col gap-2 p-2 bg-sky-300 font-medium text-sm rounded-xl"
+                                >
                                     {course.name[language]}
                                 </motion.div>
                             ))}
                             {remainingData.map((course, index) => (
                                 <motion.div
+                                    layout
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: 20 }}
                                     transition={{ duration: 0.5, delay: index * 0.025 }} 
                                     key={course.name.id} 
-                                    className="flex flex-col gap-2 p-2 bg-neutral-100 font-medium text-sm rounded-xl opacity-50">
+                                    className="flex flex-col gap-2 p-2 bg-neutral-100 font-medium text-sm rounded-xl opacity-50"
+                                >
                                     {course.name[language]}
                                 </motion.div>
                             ))}
-                        </div>
+                        </motion.div>
                     </AnimatePresence>
                 </div>
             </div>
