@@ -11,7 +11,7 @@ import Provider from "./provider";
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rozan Portfolio",
+  title: "Rozan's Portfolio",
   description: "Rozan Ghosani's portfolio",
 };
 
