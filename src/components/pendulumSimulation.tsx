@@ -31,7 +31,7 @@ export default function PendulumSimulation({
   maxAngle=50,
   idleAngle=5,
   idlePeriod=2000,
-  idleTimeout=1000,
+  idleTimeout=500,
   sensitivity=25,
 }: PendulumSimulationProps) {
 
@@ -105,7 +105,7 @@ export default function PendulumSimulation({
     // **Start timeout to resume idle animation**
     idleTimeoutRef.current = setTimeout(() => {
       startIdleAnimation();
-    }, 0);
+    }, idleTimeout);
   };
 
   useEffect(() => {
@@ -128,6 +128,7 @@ export default function PendulumSimulation({
     };
 
     fetchData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [barLength, ballRadius]);
 
   return (
