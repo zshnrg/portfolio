@@ -75,7 +75,7 @@ export default function LandingFrame() {
 
             <div className="absolute left-0 bottom-0 right-0 h-8 pointer-events-none bg-white shadow-xl flex justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="8" viewBox="0 0 320 8" fill="none">
-                    <path d="M0 4C0 1.79086 2.23858 0 5 0H315C317.761 0 320 1.79086 320 4C320 6.20914 317.761 8 315 8H5C2.23858 8 0 6.20914 0 4Z" fill="black" fill-opacity="0.15" />
+                    <path d="M0 4C0 1.79086 2.23858 0 5 0H315C317.761 0 320 1.79086 320 4C320 6.20914 317.761 8 315 8H5C2.23858 8 0 6.20914 0 4Z" fill="black" fillOpacity="0.15" />
                 </svg>
             </div>
 

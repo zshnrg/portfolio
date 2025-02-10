@@ -8,7 +8,6 @@ export function useDisclosure() {
     const onClose = useCallback(() => setIsOpen(false), [])
     const onOpenChange = useCallback(() => {
         setIsDisabled((prev) => {
-            console.log(prev)
             if (prev) return true;
 
             setIsOpen((prevOpen) => {
