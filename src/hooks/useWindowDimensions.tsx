@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 
 export default function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState<{
-    width: number | undefined
-    height: number | undefined
+    width: number,
+    height: number
   }>({
-    width: undefined,
-    height: undefined
+    width: 0,
+    height: 0
   });
 
   useEffect(() => {
