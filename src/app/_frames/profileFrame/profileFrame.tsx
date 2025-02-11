@@ -6,7 +6,7 @@ import AboutSection from "./sections/aboutSection";
 import EducationSection from "./sections/educationSection";
 import CourseworkModal from "./modals/courseworkModal";
 
-export default function ProfileFrame() {
+export default function ProfileFrame({href}: {href: string}) {
 
     const courseworkDisclosure = useDisclosure()
     const activitiesDisclosure = useDisclosure()
@@ -16,7 +16,7 @@ export default function ProfileFrame() {
             className="grid grid-cols-2 overflow-hidden"
             style={{ backgroundImage: "url('/assets/background/gradient_dark.svg')", backgroundSize: "contain", backgroundPosition: "left", backgroundRepeat: "no-repeat" }}
         >
-            <AboutSection />
+            <AboutSection href={href} />
             <EducationSection courseworkDisclosure={courseworkDisclosure} activitiesDisclosure={activitiesDisclosure} />
 
             <CourseworkModal disclosure={courseworkDisclosure} />

@@ -1,8 +1,9 @@
 
 'use client';
 
-import { useLanguage, Language } from "@/contexts/languageContext";
+import { useLanguage } from "@/contexts/languageContext";
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 
 import { motion, AnimatePresence } from "motion/react";
 import { MdMenu } from "react-icons/md";
@@ -27,9 +28,12 @@ const bellowLayerColors = [
 
 export default function Navigation() {
     const { language } = useLanguage()
+    const router = useRouter();
+
     const [bgColor, setBgColor] = useState("bg-transparent");
     const [isOpen, setIsOpen] = useState(false);
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
     const menuRefs = useRef<HTMLAnchorElement[]>([]);
     const containerRef = useRef<HTMLDivElement>(null);
     const handRef = useRef<HTMLImageElement>(null);
@@ -70,6 +74,11 @@ export default function Navigation() {
 
     const handleHover = (index: number | null) => {
         setHoveredIndex(index);
+    };
+
+    const handleClick = (url: string) => {
+        setIsOpen(false);
+        router.push(url);
     };
 
     return (
@@ -121,7 +130,7 @@ export default function Navigation() {
                                         }}
                                         onMouseEnter={() => handleHover(index)}
                                         onMouseLeave={() => handleHover(null)}
-                                        onClick={() => setIsOpen(false)}
+                                        onClick={() => handleClick(menu.url)}
                                     >
                                         {menu.name[language]}
                                     </motion.a>
