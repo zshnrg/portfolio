@@ -10,13 +10,15 @@ import Image from "next/image";
 
 import contents from "@/data/contents.json"
 import roles from "@/data/roles.json"
+import { useDevice } from "@/hooks/useDevice";
 
 export default function LandingFrame() {
 
     const { height, width } = useWindowDimensions();
+    const { isMobile } = useDevice();
 
-    const ballSize = (width) / 5.25;
-    const barLength = (height) * 0.35;
+    const ballSize = (width) / 4.5;
+    const barLength = (height) * 0.35 - (isMobile ? 100 : 0);
 
     const [index, setIndex] = useState(0);
 
@@ -65,7 +67,7 @@ export default function LandingFrame() {
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="flex w-full h-full items-end justify-center gap-12 md:gap-18 lg:gap-24"
+                className="flex w-full h-full items-end justify-between mx-10"
             >
                 <PendulumSimulation ballSVG={SVG_O} ballRadius={ballSize / 2} barLength={barLength} barDamping={5} barStiffness={500} idlePeriod={1500 + Math.random() * 500} />
                 <PendulumSimulation ballSVG={SVG_J} ballRadius={ballSize / 2} barLength={barLength + 70} barDamping={5} barStiffness={500} idlePeriod={1500 + Math.random() * 500} />

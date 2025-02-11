@@ -3,10 +3,9 @@ import { useRef } from "react"
 import { useDisclosure } from "@/hooks/useDisclosure"
 
 import { motion, useScroll, useTransform } from "framer-motion"
-import { MdOutlineSchool, MdOutlinePermDataSetting, MdOutlineArrowForward, MdOutlineAdd } from "react-icons/md"
+import { MdOutlineSchool, MdOutlinePermDataSetting, MdOutlineBook, MdOutlineWorkspacePremium } from "react-icons/md"
 
 import contents from "@/data/contents.json"
-import { Modal } from "@/components/ui/modal"
 
 const icons = [
     <MdOutlineSchool key={1} className="w-full h-full" />,
@@ -21,7 +20,8 @@ export default function EducationSection({ courseworkDisclosure, activitiesDiscl
         target: sectionRef,
         offset: ["start end", "end end"]
     })
-    const yProgressEnd = 0.8
+    const yProgressEnd = 0.6
+    const endOffset = 0.1
 
     const translateX = useTransform(scrollYProgress, [0, yProgressEnd], ["100%", "0%"])
 
@@ -39,7 +39,7 @@ export default function EducationSection({ courseworkDisclosure, activitiesDiscl
 
             <div className="flex flex-col gap-8">
                 {contents.profileFrame.educationSection.content[language].map((text, index) => {
-                    const remainingProgress = 1 - yProgressEnd
+                    const remainingProgress = (1 - endOffset) - yProgressEnd
                     const overlapStep = remainingProgress * 2 / (contents.profileFrame.educationSection.content[language].length + 1)
                     // eslint-disable-next-line react-hooks/rules-of-hooks
                     const itemOpacity = useTransform(scrollYProgress, [yProgressEnd + (overlapStep / 2) * index, yProgressEnd + overlapStep * (index + 2) / 2], [0, 1])
@@ -74,7 +74,7 @@ export default function EducationSection({ courseworkDisclosure, activitiesDiscl
 
             
             <motion.div
-                style={{ opacity: useTransform(scrollYProgress, [yProgressEnd, 1], [0, 1]) }} 
+                style={{ opacity: useTransform(scrollYProgress, [yProgressEnd, 1 - endOffset], [0, 1]) }} 
                 className="flex flex-wrap gap-4"
             >
                 {/* Related Course Button */}
@@ -82,14 +82,14 @@ export default function EducationSection({ courseworkDisclosure, activitiesDiscl
                     onClick={courseworkDisclosure.onOpen} 
                     className="flex items-center gap-2 font-bold text-sm md:text-md lg:text-lg text-white bg-sky-400 rounded-full p-3 px-6 whitespace-nowrap hover:bg-sky-500 transition-all duration-300"
                 >
-                    {language === 'en' ? "Related Coursework" : "Mata Kuliah"} <MdOutlineArrowForward  className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+                    {language === 'en' ? "Related Coursework" : "Mata Kuliah"} <MdOutlineBook  className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
                 </button>
 
                 <button
                     onClick={activitiesDisclosure.onOpen} 
                     className="flex items-center gap-2 font-bold text-sm md:text-md lg:text-lg text-neutral-800 bg-yellow-400 rounded-full p-3 px-6 whitespace-nowrap hover:bg-yellow-500 transition-all duration-300"
                 >
-                    {language === 'en' ? "More Activities" : "Kegiatan Lain"} <MdOutlineAdd className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+                    {language === 'en' ? "More Activities" : "Kegiatan Lain"} <MdOutlineWorkspacePremium className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
                 </button>
             </motion.div>
 

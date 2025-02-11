@@ -3,9 +3,9 @@ interface Paragraph {
     style: string[]
 }
 
-export function buildParagraph(paragraph: Paragraph, className: string) {
+export function buildParagraph(paragraph: Paragraph, className: string, index: number) {
     return (
-        <p className={className}>
+        <p className={className} key={index}>
             {paragraph.text.map((text, index) => {
                 if (paragraph.style[index] === "") {
                     return text + " "; // Add a space after each text
