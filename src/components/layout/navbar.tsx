@@ -3,7 +3,7 @@
 
 import { useLanguage } from "@/contexts/languageContext";
 import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 import { motion, AnimatePresence } from "motion/react";
 import { MdMenu } from "react-icons/md";
@@ -29,6 +29,7 @@ const bellowLayerColors = [
 export default function Navigation() {
     const { language } = useLanguage()
     const router = useRouter();
+    const path = usePathname();
 
     const [bgColor, setBgColor] = useState("bg-transparent");
     const [isOpen, setIsOpen] = useState(false);
@@ -78,6 +79,10 @@ export default function Navigation() {
 
     const handleClick = (url: string) => {
         setIsOpen(false);
+        // Check if basepath, if not add basepath
+        if (path !== "/") {
+            url = `/${url}`;
+        }
         router.push(url);
     };
 
