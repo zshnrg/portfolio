@@ -1,0 +1,314 @@
+{
+    "organization": {
+        "en": [
+            {
+                "name": "Himpunan Mahasiswa Informatika (HMIF) ITB",
+                "startYear": 2023,
+                "endYear": 2024,
+                "positions": [
+                    {
+                        "position": "Staff of Visual and Design",
+                        "startYear": 2024,
+                        "endYear": 2023,
+                        "description": [
+                        ]
+                    },
+                    {
+                        "position": "Head of Graphics SPARTA HMIF ITB",
+                        "startYear": 2023,
+                        "endYear": 2023,
+                        "description": [
+                            "Leading the design team at SPARTA, with 10+ staff, to meet website UI/UX and event visual needs",
+                            "Designed user interfaces for websites, covering various user roles and features to ensure easy access to features",
+                            "Manage and coordinate design staff, collaborating, and ensuring compliance with design guidelines and project deadlines",
+                            "Designing visual asset needs during the SPARTA event such as posters and merchandiseLeading"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "KPA-ITB",
+                "startYear": 2022,
+                "endYear": 2024,
+                "positions": [
+                    {
+                        "position": "Head of Communication and Information Media",
+                        "startYear": 2023,
+                        "endYear": 2024,
+                        "description": [
+                            "Leading team of 20 members to fulfill the organization's vision and mission regarding media, information and documentation needs",
+                            "Accommodate the organization's media, social and publication needs",
+                            "Created a mobile platform website to monitor facility availabilityLeading"
+                        ]
+                    },
+                    {
+                        "position": "Staff of Kinship",
+                        "startYear": 2022,
+                        "endYear": 2023,
+                        "description": [
+                            "Assist the Head of Kinship in managing the organization's kinship activities",
+                            "Improving the family atmosphere of KPA-ITB which is appreciative and interactive by organizing events to gather hundreds of KPA members, giving appreciation to members, and other celebratory activities"
+                        ]
+                    },
+                    {
+                        "position": "Head of Multimedia and Design DINAMIKA 2022",
+                        "startYear": 2022,
+                        "endYear": 2023,
+                        "description": [
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "IEEE ITB Student Branch",
+                "startYear": 2022,
+                "endYear": 2024,
+                "positions": [
+                    {
+                        "position": "Creative Officer",
+                        "startYear": 2023,
+                        "endYear": 2024,
+                        "description": [
+                            "Designing visual assets for IEEE ITB Student Branch events, such as posters, banners, and merchandise",
+                            "Creating promotional videos for IEEE ITB Student Branch social media"
+                        ]
+                    },
+                    {
+                        "position": "Creative Officer",
+                        "startYear": 2022,
+                        "endYear": 2023,
+                        "description": [
+                            "Designing visual assets for IEEE ITB Student Branch events, such as posters, banners, and merchandise",
+                            "Creating promotional videos for IEEE ITB Student Branch social media"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "ECLIPSE",
+                "startYear": 2019,
+                "endYear": 2021,
+                "positions": [
+                    {
+                        "position": "Head of Design ASTASWARA Vol.0",
+                        "startYear": 2020,
+                        "endYear": 2021,
+                        "description": [
+                            "Manage and coordinate design staff, collaborating, and ensuring compliance with design guidelines and project deadlines",
+                            "Designing visual asset needs during the ASTASWARA event such as posters and merchandise"
+                        ]
+                    },
+                    {
+                        "position": "Videographic Crew",
+                        "startYear": 2019,
+                        "endYear": 2021,
+                        "description": [
+                        ]
+                    }
+                ]
+            }
+        ],
+        "id": [
+            {
+                "name": "Himpunan Mahasiswa Informatika (HMIF) ITB",
+                "startYear": 2023,
+                "endYear": 2024,
+                "positions": [
+                    {
+                        "position": "Staff Visual dan Desain",
+                        "startYear": 2024,
+                        "endYear": 2023,
+                        "description": [
+                        ]
+                    },
+                    {
+                        "position": "Kepala Divisi Grafis SPARTA HMIF ITB",
+                        "startYear": 2023,
+                        "endYear": 2023,
+                        "description": [
+                            "Memimpin tim desain di SPARTA, dengan 10+ staff, untuk memenuhi kebutuhan UI/UX website dan visual acara",
+                            "Merancang antarmuka pengguna untuk website, mencakup berbagai peran pengguna dan fitur untuk memastikan akses mudah ke fitur",
+                            "Mengelola dan mengkoordinasi staf desain, berkolaborasi, dan memastikan kepatuhan dengan pedoman desain dan tenggat waktu proyek",
+                            "Merancang kebutuhan aset visual selama acara SPARTA seperti poster dan merchandise"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "KPA-ITB",
+                "startYear": 2022,
+                "endYear": 2024,
+                "positions": [
+                    {
+                        "position": "Kepala Komunikasi dan Media Informasi",
+                        "startYear": 2023,
+                        "endYear": 2024,
+                        "description": [
+                            "Memimpin tim 20 anggota untuk memenuhi visi dan misi organisasi terkait kebutuhan media, informasi dan dokumentasi",
+                            "Menampung kebutuhan media, sosial dan publikasi organisasi",
+                            "Membuat website platform mobile untuk memantau ketersediaan fasilitas"
+                        ]
+                    },
+                    {
+                        "position": "Staff Kekerabatan",
+                        "startYear": 2022,
+                        "endYear": 2023,
+                        "description": [
+                            "Membantu Kepala Kekerabatan dalam mengelola kegiatan kekerabatan organisasi",
+                            "Meningkatkan suasana keluarga KPA-ITB yang apresiatif dan interaktif dengan mengorganisir acara untuk mengumpulkan ratusan anggota KPA, memberikan apresiasi kepada anggota, dan kegiatan perayaan lainnya"
+                        ]
+                    },
+                    {
+                        "position": "Kepala Multimedia dan Desain DINAMIKA 2022",
+                        "startYear": 2022,
+                        "endYear": 2023,
+                        "description": [
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "IEEE ITB Student Branch",
+                "startYear": 2022,
+                "endYear": 2024,
+                "positions": [
+                    {
+                        "position": "Creative Officer",
+                        "startYear": 2023,
+                        "endYear": 2024,
+                        "description": [
+                            "Merancang aset visual untuk acara IEEE ITB Student Branch, seperti poster, spanduk, dan merchandise",
+                            "Membuat video promosi untuk media sosial IEEE ITB Student Branch"
+                        ]
+                    },
+                    {
+                        "position": "Creative Officer",
+                        "startYear": 2022,
+                        "endYear": 2023,
+                        "description": [
+                            "Merancang aset visual untuk acara IEEE ITB Student Branch, seperti poster, spanduk, dan merchandise",
+                            "Membuat video promosi untuk media sosial IEEE ITB Student Branch"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "ECLIPSE",
+                "startYear": 2019,
+                "endYear": 2021,
+                "positions": [
+                    {
+                        "position": "Kepala Desain ASTASWARA Vol.0",
+                        "startYear": 2020,
+                        "endYear": 2021,
+                        "description": [
+                            "Mengelola dan mengkoordinasi staf desain, berkolaborasi, dan memastikan kepatuhan dengan pedoman desain dan tenggat waktu proyek",
+                            "Merancang kebutuhan aset visual selama acara ASTASWARA seperti poster dan merchandise"
+                        ]
+                    },
+                    {
+                        "position": "Videographic Crew",
+                        "startYear": 2019,
+                        "endYear": 2021,
+                        "description": [
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "achievement": {
+        "en": [
+            {
+                "name": "Gold Award INASEC",
+                "year": 2019,
+                "level": "National",
+                "description": "Issued by Indonesia National Science Enterprise Challenge 2019"
+            },
+            {
+                "name": "Judges Award Indonesia Robo Fest",
+                "year": 2018,
+                "level": "International",
+                "description": "Issued by Maranatha Christian University"
+            },
+            {
+                "name": "1st Winner Sumo Robot Competition",
+                "year": 2018,
+                "level": "National",
+                "description": "Issued by SMAK 1 BPK Penabur Bandung"
+            },
+            {
+                "name": "1st Winner Fire Fighting Robot EEDAYS ITB",
+                "year": 2017,
+                "level": "National",
+                "description": "Issued by Electrical Engineering Days, Bandung Institute of Technology"
+            },
+            {
+                "name": "First Runner Up Maze Runner Robot IROF",
+                "year": 2015,
+                "level": "National",
+                "description": "Issued by Maranatha Christian University"
+            },
+            {
+                "name": "4th Winner Indonesia Robotic Olympiad (IRO)",
+                "year": 2014,
+                "level": "National",
+                "description": "Issued by Mikrobot Indonesia"
+            }
+        ],
+        "id": [
+            {
+                "name": "Medali Emas INASEC",
+                "year": 2019,
+                "level": "Nasional",
+                "description": "Dilaksanakan oleh Indonesia National Science Enterprise Challenge 2019"
+            },
+            {
+                "name": "Judges Award Indonesia Robo Fest",
+                "year": 2018,
+                "level": "Internasional",
+                "description": "Dilaksanakan oleh Universitas Kristen Maranatha"
+            },
+            {
+                "name": "Juara 1 Lomba Robot Sumo",
+                "year": 2018,
+                "level": "Nasional",
+                "description": "Dilaksanakan oleh SMAK 1 BPK Penabur Bandung"
+            },
+            {
+                "name": "Juara 1 Lomba Robot Fire Fighting EEDAYS ITB",
+                "year": 2017,
+                "level": "Nasional",
+                "description": "Dilaksanakan oleh Electrical Engineering Days, Institut Teknologi Bandung"
+            },
+            {
+                "name": "Juara 2 Maze Runner Robot IROF",
+                "year": 2015,
+                "level": "Nasional",
+                "description": "Dilaksanakan oleh Universitas Kristen Maranatha"
+            },
+            {
+                "name": "Juara 4 Indonesia Robotic Olympiad (IRO)",
+                "year": 2014,
+                "level": "Nasional",
+                "description": "Dilaksanakan oleh Mikrobot Indonesia"
+            }
+        ]
+    },
+    "publication": {
+        "en": [
+            {
+                "name": "Implementation of One-Time Password and Digital Signature RSA-PKCS#1 v1.5 on Physical Gift Card",
+                "year": 2024,
+                "abstract": "Gift cards are a popular payment method in the digital era but often face security threats such as counterfeiting, misuse, and theft. To address these issues, the author suggests the use of OTP and digital signatures. OTP is a unique code generated randomly and valid for only one transaction or a very short period. Meanwhile, digital signatures serve as verification of the authenticity and integrity of the data. This research aims to examine the effectiveness of using OTP and digital signatures in enhancing the security of gift cards. The main focus of this study is how the combination of these two methods can provide better protection compared to conventional methods. The technology commonly used in the implementation of digital signature algorithms is RSA-PKCS#1 v1.5 and SHA-3. These two algorithms can provide a good balance between security, compatibility, and performance."
+            }
+        ],
+        "id": [
+            {
+                "name": "Implementasi One-Time Password dan Digital Signature RSA-PKCS#1 v1.5 pada Physical Gift Card",
+                "year": 2024,
+                "abstract": "Kartu hadiah merupakan metode pembayaran yang populer di era digital namun sering menghadapi ancaman keamanan seperti pemalsuan, penyalahgunaan, dan pencurian. Untuk mengatasi masalah tersebut, penulis menyarankan penggunaan OTP dan tanda tangan digital. OTP adalah kode unik yang dihasilkan secara acak dan hanya berlaku untuk satu transaksi atau periode yang sangat singkat. Sementara itu, tanda tangan digital berfungsi sebagai verifikasi keaslian dan integritas data. Penelitian ini bertujuan untuk menguji efektivitas penggunaan OTP dan tanda tangan digital dalam meningkatkan keamanan kartu hadiah. Fokus utama dari penelitian ini adalah bagaimana kombinasi kedua metode ini dapat memberikan perlindungan yang lebih baik dibandingkan dengan metode konvensional. Teknologi yang umum digunakan dalam implementasi algoritma tanda tangan digital adalah RSA-PKCS#1 v1.5 dan SHA-3. Kedua algoritma ini dapat memberikan keseimbangan yang baik antara keamanan, kompatibilitas, dan kinerja.Gift card adalah metode pembayaran yang populer di era digital, namun seringkali menghadapi ancaman keamanan seperti pemalsuan, penyalahgunaan, dan pencurian. Untuk mengatasi masalah ini, penulis menyarankan penggunaan OTP dan digital signature. OTP adalah kode unik yang dihasilkan secara acak dan hanya berlaku untuk satu kali transaksi atau dalam jangka waktu yang sangat singkat. Sementara itu, digital signature berfungsi sebagai verifikasi keaslian dan integritas data. Penelitian ini bertujuan untuk mengkaji efektivitas penggunaan OTP dan digital signature dalam meningkatkan keamanan gift card. Fokus utama penelitian ini adalah bagaimana kombinasi kedua metode ini dapat memberikan perlindungan yang lebih baik dibandingkan metode konvensional. Teknologi yang umum digunakan dalam implementasi algoritma tanda tangan digital adalah RSA-PKCS#1 v1.5 dan SHA-3. Kedua algoritma ini dapat memberikan keseimbangan yang baik antara keamanan, kompatibilitas, dan kinerja."
+            }
+        ]
+    } 
+}
