@@ -5,6 +5,7 @@ import { useDisclosure } from "@/hooks/useDisclosure";
 import AboutSection from "./sections/aboutSection";
 import EducationSection from "./sections/educationSection";
 import CourseworkModal from "./modals/courseworkModal";
+import MoreActivityModal from "./modals/moreActivityModal";
 
 export default function ProfileFrame({href}: {href: string}) {
 
@@ -20,6 +21,7 @@ export default function ProfileFrame({href}: {href: string}) {
             <EducationSection courseworkDisclosure={courseworkDisclosure} activitiesDisclosure={activitiesDisclosure} />
 
             <CourseworkModal disclosure={courseworkDisclosure} />
+            <MoreActivityModal disclosure={activitiesDisclosure} />
         </div>
     )
 }

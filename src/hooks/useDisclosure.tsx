@@ -11,7 +11,6 @@ export function useDisclosure() {
             if (prev) return true;
 
             setIsOpen((prevOpen) => {
-                console.log("Setting to", !prevOpen)
                 return !prevOpen;
             }); 
             setTimeout(() => setIsDisabled(false), 500);
