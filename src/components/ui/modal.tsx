@@ -14,6 +14,7 @@ const sizes = {
   "3xl": "w-3xl",
   "4xl": "w-4xl",
   "5xl": "w-5xl",
+  "6xl": "w-6xl",
   full: "w-full h-full",
 };
 

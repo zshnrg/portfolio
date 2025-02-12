@@ -43,7 +43,7 @@ export default function MoreActivityModal({ disclosure } : { disclosure: ReturnT
     return (
         <Modal 
             title={ language === "en" ? "More Activities" : "Kegiatan Lainnya" }
-            size="4xl" placement="auto"
+            size="6xl" placement="auto"
             {...disclosure}
         >
             <div className="flex flex-col gap-4">
