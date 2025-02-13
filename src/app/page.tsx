@@ -5,6 +5,7 @@ import ProfileFrame from "./_frames/profileFrame/profileFrame";
 
 import { useEffect } from "react";
 import { useParams } from "next/navigation";
+import ExperienceFrame from "./_frames/experienceFrame/experienceFrame";
 
 export default function Home() {
 
@@ -24,6 +25,7 @@ export default function Home() {
     <div>
       <LandingFrame />
       <ProfileFrame href="#profile"/>
+      <ExperienceFrame href="#experience"/>
     </div>
   );
 }

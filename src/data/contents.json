@@ -134,5 +134,19 @@
                 ]
             }
         }
+    },
+    "experienceFrame": {
+        "experienceSection": {
+            "title": {
+                "en": "Experience",
+                "id": "Pengalaman"
+            }
+        },
+        "certifcationSection": {
+            "title": {
+                "en": "Certifications",
+                "id": "Sertifikasi"
+            }
+        }
     }
 }
