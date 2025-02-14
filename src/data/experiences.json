@@ -1,0 +1,162 @@
+{
+    "experience": {
+        "en": [
+            {
+                "organization": "PT Jasa dan Kepariwisataan Jabar (Perseroda)",
+                "position": "Software Engineer",
+                "employment": "Internship",
+                "startDate": "Sep 2024",
+                "endDate": "Dec 2024",
+                "location": "Bandung, Indonesia",
+                "workingType": "Onsite",
+                "description": "Developed a human resources information system (HRIS) for this company. In this job, my main position is backend developer and machine learning engineer. In addition, I also contribute minor features in the development of web dashboards and mobile apps.",
+                "point": [
+                    "Developed a backend server for mobile app using ExpressJS with JWT authentication",
+                    "Engineered a machine learning model for identifying user faces in the digital attendance system.",
+                    "Implemented a cron-based scheduled task execution management system.",
+                    "Developed a web-based admin dashboard for managing employees using  CodeIgniter.",
+                    "Develop and integrate features for attendance recording in HRIS mobile application."
+                ]
+            },
+            {
+                "organization": "Inspektorat Daerah Provinsi Jawa Barat",
+                "position": "Frontend Developer",
+                "employment": "Internship",
+                "startDate": "Jun 2024",
+                "endDate": "Sep 2024",
+                "location": "Bandung, Indonesia",
+                "workingType": "Hybrid",
+                "description": "",
+                "point": [
+                    "Developed an auditory application to simplify the audit monitoring and evaluation process of strategic development projects owned by the West Java government, used by 116 auditors.",
+                    "Increase the efficiency of package audit work by 30% by collecting data into a centralized location.",
+                    "Developed web interfaces with 89/100 accessibility according to Lighthouse assessment."
+                ]
+            },
+            {
+                "organization": "Inspektorat Daerah Provinsi Jawa Barat",
+                "position": "UI Designer",
+                "employment": "Internship",
+                "startDate": "Jun 2024",
+                "endDate": "Sep 2024",
+                "location": "Bandung, Indonesia",
+                "workingType": "Hybrid",
+                "description": "",
+                "point": [
+                    "Designed a user interface for an auditory application to simplify the audit monitoring and evaluation process of strategic development projects owned by the West Java government, used by 116 auditors.",
+                    "Designed user interfaces prototype for a website and mobile app with responsive layout.",
+                    "Implemented Material 3 design system on mobile and web app."
+                ]
+            },
+            {
+                "organization": "Inkubator IT HMIF ITB",
+                "position": "Lead User Interface Designer",
+                "employment": "Contract",
+                "startDate": "Jan 2024",
+                "endDate": "Mar 2024",
+                "location": "Bandung, Indonesia",
+                "workingType": "Remote",
+                "description": "Designing user interface of a mobile application for predicting fetal safety for pregnant women",
+                "point": [
+                    "Exploring the need for user interface design that is suitable for use by young pregnant women.",
+                    "Create graphic designs for user interface needs that feel cheerful and positive",
+                    "Successfully fulfilled the wishes of the project owner and provided guidance on using the application prototype"
+                ]
+            }
+        ],
+        "id": [
+            {
+                "organization": "PT Jasa dan Kepariwisataan Jabar (Perseroda)",
+                "position": "Software Engineer",
+                "employment": "Magang",
+                "startDate": "Sep 2024",
+                "endDate": "Des 2024",
+                "location": "Bandung, Indonesia",
+                "workingType": "Kantor Utama",
+                "description": "Mengembangkan sistem informasi sumber daya manusia (HRIS) untuk perusahaan ini. Dalam pekerjaan ini, posisi utama saya adalah backend developer dan machine learning engineer. Selain itu, saya juga berkontribusi pada pengembangan fitur minor di pengembangan dashboard web dan aplikasi seluler.",
+                "point": [
+                    "Mengembangkan server backend untuk aplikasi seluler menggunakan ExpressJS dengan autentikasi JWT",
+                    "Merekayasa model pembelajaran mesin untuk mengidentifikasi wajah pengguna dalam sistem absensi digital.",
+                    "Menerapkan sistem manajemen eksekusi tugas terjadwal berbasis cron.",
+                    "Mengembangkan dasbor admin berbasis web untuk mengelola karyawan menggunakan CodeIgniter.",
+                    "Mengembangkan dan mengintegrasikan fitur untuk pencatatan kehadiran dalam aplikasi seluler HRIS."
+                ]
+            },
+            {
+                "organization": "Inspektorat Daerah Provinsi Jawa Barat",
+                "position": "Frontend Developer",
+                "employment": "Magang",
+                "startDate": "Jun 2024",
+                "endDate": "Sep 2024",
+                "location": "Bandung, Indonesia",
+                "workingType": "Hybrid",
+                "description": "",
+                "point": [
+                    "Mengembangkan aplikasi audit untuk menyederhanakan proses pemantauan dan evaluasi audit proyek pembangunan strategis yang dimiliki oleh pemerintah Jawa Barat, digunakan oleh 116 auditor.",
+                    "Meningkatkan efisiensi kerja audit paket sebesar 30% dengan mengumpulkan data ke lokasi terpusat.",
+                    "Mengembangkan antarmuka web dengan aksesibilitas 89/100 sesuai dengan penilaian Lighthouse."
+                ]
+            },
+            {
+                "organization": "Inspektorat Daerah Provinsi Jawa Barat",
+                "position": "UI Designer",
+                "employment": "Magang",
+                "startDate": "Jun 2024",
+                "endDate": "Sep 2024",
+                "location": "Bandung, Indonesia",
+                "workingType": "Hybrid",
+                "description": "",
+                "point": [
+                    "Merancang antarmuka pengguna untuk aplikasi audit untuk menyederhanakan proses pemantauan dan evaluasi audit proyek pembangunan strategis yang dimiliki oleh pemerintah Jawa Barat, digunakan oleh 116 auditor.",
+                    "Merancang prototipe antarmuka pengguna untuk situs web dan aplikasi seluler dengan tata letak responsif.",
+                    "Menerapkan sistem desain Material 3 pada aplikasi seluler dan web."
+                ]
+            },
+            {
+                "organization": "Inkubator IT HMIF ITB",
+                "position": "Lead User Interface Designer",
+                "employment": "Kontrak",
+                "startDate": "Jan 2024",
+                "endDate": "Mar 2024",
+                "location": "Bandung, Indonesia",
+                "workingType": "Remote",
+                "description": "Merancang antarmuka pengguna aplikasi seluler untuk memprediksi keselamatan janin bagi ibu hamil",
+                "point": [
+                    "Mengeksplorasi kebutuhan desain antarmuka pengguna yang cocok untuk digunakan oleh ibu hamil muda.",
+                    "Membuat desain grafis untuk kebutuhan antarmuka pengguna yang terasa ceria dan positif",
+                    "Berhasil memenuhi keinginan pemilik proyek dan memberikan panduan penggunaan prototipe aplikasi"
+                ]
+            }       
+        ]
+    },
+    "certification": {
+        "en": [
+            {
+                "title": "Networking Essentials",
+                "organization": "Cisco Networking Academy",
+                "date": "May 2023",
+                "credential": "c0e81274-d107-42cc-98d9-13bdda94897c"
+            },
+            {
+                "title": "DevNet Associate",
+                "organization": "Cisco Networking Academy",
+                "date": "Nov 2023",
+                "credential": "7f9cc9d3-acae-4e70-adb4-3b8ffb9e9dde"
+            }
+        ],
+        "id": [
+            {
+                "title": "Networking Essentials",
+                "organization": "Cisco Networking Academy",
+                "date": "Mei 2023",
+                "credential": "c0e81274-d107-42cc-98d9-13bdda94897c"
+            },
+            {
+                "title": "DevNet Associate",
+                "organization": "Cisco Networking Academy",
+                "date": "Nov 2023",
+                "credential": "7f9cc9d3-acae-4e70-adb4-3b8ffb9e9dde"
+            }
+        ]
+    }
+}
